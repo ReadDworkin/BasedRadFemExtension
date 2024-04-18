@@ -6,8 +6,6 @@
 Bugs: 
 
 Currently this will only only work on a page reload or visiting the url directly for https://twitter.com/bethylamine.
-
-Screenshot: 
     <img src="screenshots/1.png"/>
     <img src="screenshots/2.png"/>
     <img src="screenshots/3.png"/>
