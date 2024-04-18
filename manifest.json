@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Based TransRadFem Plugin",
+    "description": "A twitter plugin which marks bethylamines red by and for the TransRadFem community. ",
+    "version": "0.0.1",
+    "icons": {
+        "16": "logo/icon16.png",
+        "48": "logo/icon48.png",
+        "128": "logo/icon128.png"
+    },
+    "options_page": "settings/settings.html",
+    "action": {
+        "default_title": "Chrome Addon v3 Starter",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [{
+        "matches": ["https://twitter.com/bethylamine"],
+        "js": ["foreground.js"],
+        "css": ["foreground.css"]
+    }]
+}
